@@ -16,13 +16,13 @@ public class FixDebugFive4
       three = Integer.parseInt(str);
       str = JOptionPane.showInputDialog(null,"Enter an integer");
       four = Integer.parseInt(str);
-      if(one > two && one >= three && one < four)
+      if(one > two && one > three && one > four)
          output = "Highest is " + one;
       else
          if(two > one || two > three && two > four)
             output = "Highest is " + two;
          else
-           if(three > one && three > two || three == four)
+           if(three > one && three > two || three > four)
               output = "Highest is " + three;
            else
               output = "Highest is " + four;
